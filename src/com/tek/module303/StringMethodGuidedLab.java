@@ -42,7 +42,18 @@ public class StringMethodGuidedLab {
 		
 		String s3 = "   Hello   ";
 		System.out.println(s3 + "How are you?");
-		System.out.println(s3.trim() + "How are you?");
+		System.out.println(s3.trim() + " How are you?");
+		
+		// 4. toLowerCase() method
+		
+		String s4 = "HELLO HOw are you?";
+		String s4lower = s4.toLowerCase();
+		System.out.println(s4lower);
+		
+		//5. toUpper() method
+		
+		String s5 = "hello, how are you";
+		String s5Upper = s5.toUpper();
 	}
 
 }
