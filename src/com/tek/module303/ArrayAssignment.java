@@ -198,18 +198,22 @@ public class ArrayAssignment {
 		 * Finally, print out the contents of the array.
 		 */
 		
-		System.out.println("Please enter a list of your favorite things: ");
+		//initialize scanner 
 		
-		Scanner sc = new Scanner(System.in); 
+		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("How many favorite things do you have?");
+		int favorites = sc.nextInt();
+ 
+		//creating array 
 		String[] userFav = new String[10];
 		
-		for (int i = 0; i < 11; i++) {
-			String favItem = sc.nextLine();
-			userFav[i] = favItem;
-			System.out.print("Your Favorite things are: " + userFav[i]);
+		for (int i = 0; i < favorites; i++) {
+			System.out.println("Enter your favorite: ");
+			userFav[i] = sc.nextLine();
 		}
+		System.out.println("These are your favorites: " + Arrays.toString(userFav));
 	
-		
+		sc.close();
 	}
 }
